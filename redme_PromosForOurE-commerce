@@ -1,0 +1,16 @@
+Mini Project Machine Learning With Python for Beginner: 
+PromosForOurE-commerce
+
+Case Study: Promos for our e-commerce
+	1. Data eksplorasi dengan head(), info(), describe(), shape
+    2. Data eksplorasi dengan dengan mengecek korelasi dari setiap feature menggunakan fungsi corr()
+    3. Data eksplorasi dengan mengecek distribusi label menggunakan fungsi groupby() dan size()
+	4. Data eksplorasi dengan visualisasi:
+		- Jumlah user dibagi ke dalam rentang usia menggunakan histogram (hist()), gunakan bins = data.Age.nunique() sebagai argumen. nunique() adalah fungsi untuk menghitung jumlah data untuk setiap usia (Age).
+		- Gunakan pairplot() dari seaborn modul untuk menggambarkan hubungan setiap feature.
+	5. Cek missing value
+	6. Lakukan pemodelan dengan Logistic Regression, gunakan perbandingan 80:20 untuk training vs testing :
+        - Deklarasikan data ke dalam X dengan mendrop feature/variabel yang bukan numerik, (type = object) dari data (Logistic Regression hanya dapat memproses numerik variabel). Assign Target/Label feature dan assign sebagai y
+        - Split X dan y ke dalam training dan testing dataset, gunakan perbandingan 80:20 dan random_state = 42
+        - Assign classifier sebagai logreg, kemudian fit classifier ke X_train dan predict dengan X_test. Print evaluation score.
+	7. Print Confusion matrix dan classification report
